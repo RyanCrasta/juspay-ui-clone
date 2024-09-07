@@ -173,3 +173,116 @@ bannerTextAnimation("secondRow", 1.92, 1.91, 1.9, 1.89, 1.88, 1.87, 1.86, 0);
 bannerTextAnimation("thirdRow", 1.94, 1.93, 1.92, 1.91, 1.9, 1.89, 1.88, 1);
 
 bannerTextAnimation("fourthRow", 1.96, 1.95, 1.94, 1.93, 1.92, 1.91, 1.9, 1);
+
+function getMousePosition(canvas, e) {
+  var rect = canvas.getBoundingClientRect();
+
+  return {
+    xx:
+      parseInt(e.clientX) -
+      parseInt(rect.left) -
+      $("#followCursor").height() / 2,
+    yy:
+      parseInt(e.clientY) -
+      parseInt(rect.top) -
+      $("#followCursor").height() / 2,
+  };
+}
+
+let hide = false;
+
+function cursorEffect(cursorId, pageContent) {
+  pageContent.addEventListener("mousemove", function (e) {
+    var { xx, yy } = getMousePosition(pageContent, e);
+
+    if (e.clientX === 0) {
+      scaleDown();
+    } else {
+      if (!hide) {
+        scaleUp();
+        gsap.to(cursorId, {
+          x: xx,
+          y: yy,
+          opacity: 1,
+        });
+      }
+    }
+  });
+
+  function scaleUp() {
+    gsap.to(cursorId, {
+      scale: 1,
+      opacity: 1,
+    });
+  }
+
+  function scaleDown() {
+    gsap.to(cursorId, {
+      scale: 0,
+      opacity: 0,
+    });
+  }
+
+  document.querySelector("#firstColumn").addEventListener("mouseleave", () => {
+    hide = true;
+    scaleDown();
+  });
+
+  document.querySelector("#firstColumn").addEventListener("mouseenter", () => {
+    // document.querySelector("#followCursor").style.backgroundColor = "orange";
+
+    $("#followCursor img").attr("src", "./images/general-hover.svg");
+
+    document.querySelector("#cursorInfoLineOne").textContent = "125Mn+";
+    document.querySelector("#cursorInfoLineTwo").textContent = "Daily Trans";
+    document.querySelector("#cursorInfo").style.bottom = "unset";
+    document.querySelector("#cursorInfo").style.top = "60%";
+    hide = false;
+    scaleUp();
+  });
+
+  document.querySelector("#secondColumn").addEventListener("mouseenter", () => {
+    // document.querySelector("#followCursor").style.backgroundColor = "green";
+
+    $("#followCursor img").attr("src", "./images/global-hover.svg");
+    document.querySelector("#cursorInfoLineOne").textContent = "99.99%";
+    document.querySelector("#cursorInfoLineTwo").textContent = "Uptime";
+    document.querySelector("#cursorInfo").style.bottom = "unset";
+    document.querySelector("#cursorInfo").style.top = "60%";
+    hide = false;
+    scaleUp();
+  });
+
+  document.querySelector("#secondColumn").addEventListener("mouseleave", () => {
+    hide = true;
+    scaleDown();
+  });
+
+  document.querySelector("#thirdColumn").addEventListener("mouseenter", () => {
+    // document.querySelector("#followCursor").style.backgroundColor = "red";
+    $("#followCursor img").attr("src", "./images/juspay-hover.svg");
+    document.querySelector("#cursorInfoLineOne").textContent = "$500Bn+";
+    document.querySelector("#cursorInfoLineTwo").textContent = "Annual TPV";
+
+    document.querySelector("#cursorInfo").style.bottom = "60%";
+    document.querySelector("#cursorInfo").style.top = "unset";
+
+    hide = false;
+    scaleUp();
+  });
+
+  document.querySelector("#thirdColumn").addEventListener("mouseleave", () => {
+    hide = true;
+    scaleDown();
+  });
+
+  document
+    .querySelector("#headingTextContainer, #ctaContainer")
+    .addEventListener("mouseenter", () => {
+      console.log("pinku");
+      hide = true;
+      scaleDown();
+    });
+}
+
+cursorEffect("#followCursor", document.querySelector("#columnsCtn"));
