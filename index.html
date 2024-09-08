@@ -20,29 +20,120 @@
               <span class="pairTwo">a</span>
               <span class="pairOne">y</span>
             </a>
+
+            <a id="mobileLogo">
+              <img src="./images/juspay-full-logo-dark-mode.svg" />
+            </a>
           </div>
 
           <div id="secondHalfNavigation">
-            <div class="navItemsCtn">
+            <div class="navItemsCtn aboutUs">
               <a>About us</a>
             </div>
 
-            <div class="navItemsCtn">
+            <div class="navItemsCtn docs">
               <a>Docs</a>
             </div>
 
-            <div class="navItemsCtn">
+            <div class="navItemsCtn integration">
               <a>Integrations</a>
             </div>
 
-            <div class="navItemsCtn">
+            <div class="navItemsCtn globeNav">
               <a>
                 <img id="navGlobeIcon" src="./images/globe-dark.png" />
               </a>
+
+              <div id="dropdown">
+                <div id="firstDropdownSection">region</div>
+                <div id="horizontalLine"></div>
+                <div id="secondDropdownSection">
+                  <div>
+                    <a>
+                      <div class="dropdownLinkCtn">
+                        <img src="./images/sea.svg" />
+                        <div>
+                          <div class="navText">Southeast Asia (SEA)</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div>
+                    <a>
+                      <div class="dropdownLinkCtn">
+                        <img src="./images/latam.svg" />
+                        <div>
+                          <div class="navText">Latin America (LATAM)</div>
+                          <div>
+                            <a class="englishLanguageSelection">English</a>
+                            <a class="portuguesLanguageSelection">Potugûes</a>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div>
+                    <a>
+                      <div class="dropdownLinkCtn">
+                        <img src="./images/north-america.svg" />
+                        <div>
+                          <div class="navText">North America</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div>
+                    <a>
+                      <div class="dropdownLinkCtn">
+                        <img src="./images/europe.svg" />
+                        <div>
+                          <div class="navText">Europe</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a>
+                      <div class="dropdownLinkCtn">
+                        <img src="./images/india.svg" />
+                        <div>
+                          <div class="navText">India</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="navItemsCtn">
+            <div class="navItemsCtn contactUs">
               <a>Contact us <img src="./images/arrow-right-blue.svg" /></a>
+            </div>
+
+            <button id="hamburgerBtn">
+              <img
+                class="hamburgerBtnImage"
+                src="./images/hamburger-icon.svg"
+              />
+            </button>
+          </div>
+
+          <div class="mobileNavigation">
+            <div>
+              <div>
+                <a>About us</a>
+              </div>
+
+              <div>
+                <a>Docs</a>
+              </div>
+
+              <div>
+                <a>Integrations</a>
+              </div>
             </div>
           </div>
         </nav>
@@ -50,109 +141,333 @@
 
       <div id="mainFirstFoldContainer">
         <div>
-          <div>
+          <div id="headingMainText">
             <div id="headingTextContainer">
               <h1>Payments designed for</h1>
               <div id="textRevealEffectContainer">
                 <div>
                   <div class="allSymbols">
-                    <div class="firstRow-onePair firstRow">¥</div>
-                    <div class="secondRow-onePair secondRow">¥</div>
-                    <div class="thirdRow-onePair thirdRow">₣</div>
-                    <div class="fourthRow-onePair fourthRow">G</div>
+                    <div
+                      class="firstRow-onePair firstRow-onePair-left firstRow"
+                    >
+                      ¥
+                    </div>
+                    <div
+                      class="secondRow-onePair secondRow-onePair-left secondRow"
+                    >
+                      ¥
+                    </div>
+                    <div
+                      class="thirdRow-onePair thirdRow-onePair-left thirdRow"
+                    >
+                      ₣
+                    </div>
+                    <div
+                      class="fourthRow-onePair fourthRow-onePair-left fourthRow"
+                    >
+                      G
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-secondPair firstRow">₹</div>
-                    <div class="secondRow-secondPair secondRow">¥</div>
-                    <div class="thirdRow-secondPair thirdRow">₹</div>
-                    <div class="fourthRow-secondPair fourthRow">L</div>
+                    <div
+                      class="firstRow-secondPair firstRow-secondPair-left firstRow"
+                    >
+                      ₹
+                    </div>
+                    <div
+                      class="secondRow-secondPair secondRow-secondPair-left secondRow"
+                    >
+                      ¥
+                    </div>
+                    <div
+                      class="thirdRow-secondPair thirdRow-secondPair-left thirdRow"
+                    >
+                      ₹
+                    </div>
+                    <div
+                      class="fourthRow-secondPair fourthRow-secondPair-left fourthRow"
+                    >
+                      L
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-thirdPair firstRow">£</div>
-                    <div class="secondRow-thirdPair secondRow">₣</div>
-                    <div class="thirdRow-thirdPair thirdRow">€</div>
-                    <div class="fourthRow-thirdPair fourthRow">O</div>
+                    <div
+                      class="firstRow-thirdPair firstRow-thirdPair-left firstRow"
+                    >
+                      £
+                    </div>
+                    <div
+                      class="secondRow-thirdPair secondRow-thirdPair-left secondRow"
+                    >
+                      ₣
+                    </div>
+                    <div
+                      class="thirdRow-thirdPair thirdRow-thirdPair-left thirdRow"
+                    >
+                      €
+                    </div>
+                    <div
+                      class="fourthRow-thirdPair fourthRow-thirdPair-left fourthRow"
+                    >
+                      O
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-fourthPair firstRow">₣</div>
-                    <div class="secondRow-fourthPair secondRow">₣</div>
-                    <div class="thirdRow-fourthPair thirdRow">€</div>
-                    <div class="fourthRow-fourthPair fourthRow">B</div>
+                    <div
+                      class="firstRow-fourthPair firstRow-fourthPair-left firstRow"
+                    >
+                      ₣
+                    </div>
+                    <div
+                      class="secondRow-fourthPair secondRow-fourthPair-left secondRow"
+                    >
+                      ₣
+                    </div>
+                    <div
+                      class="thirdRow-fourthPair thirdRow-fourthPair-left thirdRow"
+                    >
+                      €
+                    </div>
+                    <div
+                      class="fourthRow-fourthPair fourthRow-fourthPair-left fourthRow"
+                    >
+                      B
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-fifthPair firstRow">¥</div>
-                    <div class="secondRow-fifthPair secondRow">¥</div>
-                    <div class="thirdRow-fifthPair thirdRow">₣</div>
-                    <div class="fourthRow-fifthPair fourthRow">A</div>
+                    <div
+                      class="firstRow-fifthPair firstRow-fifthPair-left firstRow"
+                    >
+                      ¥
+                    </div>
+                    <div
+                      class="secondRow-fifthPair secondRow-fifthPair-left secondRow"
+                    >
+                      ¥
+                    </div>
+                    <div
+                      class="thirdRow-fifthPair thirdRow-fifthPair-left thirdRow"
+                    >
+                      ₣
+                    </div>
+                    <div
+                      class="fourthRow-fifthPair fourthRow-fifthPair-left fourthRow"
+                    >
+                      A
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-sixthPair firstRow">$</div>
-                    <div class="secondRow-sixthPair secondRow">R</div>
-                    <div class="thirdRow-sixthPair thirdRow">£</div>
-                    <div class="fourthRow-sixthPair fourthRow">L</div>
+                    <div
+                      class="firstRow-sixthPair firstRow-sixthPair-left firstRow"
+                    >
+                      $
+                    </div>
+                    <div
+                      class="secondRow-sixthPair secondRow-sixthPair-left secondRow"
+                    >
+                      R
+                    </div>
+                    <div
+                      class="thirdRow-sixthPair thirdRow-sixthPair-left thirdRow"
+                    >
+                      £
+                    </div>
+                    <div
+                      class="fourthRow-sixthPair fourthRow-sixthPair-left fourthRow"
+                    >
+                      L
+                    </div>
                   </div>
                 </div>
 
                 <div>
                   <div class="allSymbols">
-                    <div class="firstRow-seventhPair firstRow">$</div>
-                    <div class="secondRow-seventhPair secondRow">¥</div>
-                    <div class="thirdRow-seventhPair thirdRow">R</div>
-                    <div class="fourthRow-seventhPair fourthRow">O</div>
+                    <div
+                      class="firstRow-seventhPair firstRow-seventhPair-right firstRow"
+                    >
+                      $
+                    </div>
+                    <div
+                      class="secondRow-seventhPair secondRow-seventhPair-right secondRow"
+                    >
+                      ¥
+                    </div>
+                    <div
+                      class="thirdRow-seventhPair thirdRow-seventhPair-right thirdRow"
+                    >
+                      R
+                    </div>
+                    <div
+                      class="fourthRow-seventhPair fourthRow-seventhPair-right fourthRow"
+                    >
+                      O
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-seventhPair firstRow">R</div>
-                    <div class="secondRow-seventhPair secondRow">€</div>
-                    <div class="thirdRow-seventhPair thirdRow">₣</div>
-                    <div class="fourthRow-seventhPair fourthRow">U</div>
+                    <div
+                      class="firstRow-seventhPair firstRow-seventhPair-right firstRow"
+                    >
+                      R
+                    </div>
+                    <div
+                      class="secondRow-seventhPair secondRow-seventhPair-right secondRow"
+                    >
+                      €
+                    </div>
+                    <div
+                      class="thirdRow-seventhPair thirdRow-seventhPair-right thirdRow"
+                    >
+                      ₣
+                    </div>
+                    <div
+                      class="fourthRow-seventhPair fourthRow-seventhPair-right fourthRow"
+                    >
+                      U
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-sixthPair firstRow">€</div>
-                    <div class="secondRow-sixthPair secondRow">R</div>
-                    <div class="thirdRow-sixthPair thirdRow">R</div>
-                    <div class="fourthRow-sixthPair fourthRow">T</div>
+                    <div
+                      class="firstRow-sixthPair firstRow-sixthPair-right firstRow"
+                    >
+                      €
+                    </div>
+                    <div
+                      class="secondRow-sixthPair secondRow-sixthPair-right secondRow"
+                    >
+                      R
+                    </div>
+                    <div
+                      class="thirdRow-sixthPair thirdRow-sixthPair-right thirdRow"
+                    >
+                      R
+                    </div>
+                    <div
+                      class="fourthRow-sixthPair fourthRow-sixthPair-right fourthRow"
+                    >
+                      T
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-fifthPair firstRow">₣</div>
-                    <div class="secondRow-fifthPair secondRow">₹</div>
-                    <div class="thirdRow-fifthPair thirdRow">$</div>
-                    <div class="fourthRow-fifthPair fourthRow">C</div>
+                    <div
+                      class="firstRow-fifthPair firstRow-fifthPair-right firstRow"
+                    >
+                      ₣
+                    </div>
+                    <div
+                      class="secondRow-fifthPair secondRow-fifthPair-right secondRow"
+                    >
+                      ₹
+                    </div>
+                    <div
+                      class="thirdRow-fifthPair thirdRow-fifthPair-right thirdRow"
+                    >
+                      $
+                    </div>
+                    <div
+                      class="fourthRow-fifthPair fourthRow-fifthPair-right fourthRow"
+                    >
+                      C
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-fourthPair firstRow">£</div>
-                    <div class="secondRow-fourthPair secondRow">$</div>
-                    <div class="thirdRow-fourthPair thirdRow">€</div>
-                    <div class="fourthRow-fourthPair fourthRow">O</div>
+                    <div
+                      class="firstRow-fourthPair firstRow-fourthPair-right firstRow"
+                    >
+                      £
+                    </div>
+                    <div
+                      class="secondRow-fourthPair secondRow-fourthPair-right secondRow"
+                    >
+                      $
+                    </div>
+                    <div
+                      class="thirdRow-fourthPair thirdRow-fourthPair-right thirdRow"
+                    >
+                      €
+                    </div>
+                    <div
+                      class="fourthRow-fourthPair fourthRow-fourthPair-right fourthRow"
+                    >
+                      O
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-thirdPair firstRow">R</div>
-                    <div class="secondRow-thirdPair secondRow">€</div>
-                    <div class="thirdRow-thirdPair thirdRow">€</div>
-                    <div class="fourthRow-thirdPair fourthRow">M</div>
+                    <div
+                      class="firstRow-thirdPair firstRow-thirdPair-right firstRow"
+                    >
+                      R
+                    </div>
+                    <div
+                      class="secondRow-thirdPair secondRow-thirdPair-right secondRow"
+                    >
+                      €
+                    </div>
+                    <div
+                      class="thirdRow-thirdPair thirdRow-thirdPair-right thirdRow"
+                    >
+                      €
+                    </div>
+                    <div
+                      class="fourthRow-thirdPair fourthRow-thirdPair-right fourthRow"
+                    >
+                      M
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-secondPair firstRow">$</div>
-                    <div class="secondRow-secondPair secondRow">₹</div>
-                    <div class="thirdRow-secondPair thirdRow">$</div>
-                    <div class="fourthRow-secondPair fourthRow">E</div>
+                    <div
+                      class="firstRow-secondPair firstRow-secondPair-right firstRow"
+                    >
+                      $
+                    </div>
+                    <div
+                      class="secondRow-secondPair secondRow-secondPair-right secondRow"
+                    >
+                      ₹
+                    </div>
+                    <div
+                      class="thirdRow-secondPair thirdRow-secondPair-right thirdRow"
+                    >
+                      $
+                    </div>
+                    <div
+                      class="fourthRow-secondPair fourthRow-secondPair-right fourthRow"
+                    >
+                      E
+                    </div>
                   </div>
 
                   <div class="allSymbols">
-                    <div class="firstRow-onePair firstRow">£</div>
-                    <div class="secondRow-onePair secondRow">R</div>
-                    <div class="thirdRow-onePair thirdRow">₹</div>
-                    <div class="fourthRow-onePair fourthRow">S</div>
+                    <div
+                      class="firstRow-onePair firstRow-onePair-right firstRow"
+                    >
+                      £
+                    </div>
+                    <div
+                      class="secondRow-onePair secondRow-onePair-right secondRow"
+                    >
+                      R
+                    </div>
+                    <div
+                      class="thirdRow-onePair thirdRow-onePair-right thirdRow"
+                    >
+                      ₹
+                    </div>
+                    <div
+                      class="fourthRow-onePair fourthRow-onePair-right fourthRow"
+                    >
+                      S
+                    </div>
                   </div>
                 </div>
               </div>
@@ -160,10 +475,15 @@
           </div>
 
           <div id="ctaContainer">
-            <h2>
+            <h2 id="bigScreenDescription">
               <span>Juspay</span> powers leading enterprises around the world,
               simplifying global coverage, orchestration, conversions, fraud
               reduction and seamless customer experiences.
+            </h2>
+
+            <h2 id="smallScreenDescription">
+              Simplify <span>global coverage</span>, optimise costs, improve
+              conversions, and minimise payment operations.
             </h2>
 
             <div id="ctaButton">
@@ -203,7 +523,28 @@
         <div id="thirdColumn"></div>
       </div>
     </div>
-    <div id="secondFoldContainer"></div>
+    <div id="secondFoldContainer">
+      <div class="scroller" data-speed="fast">
+        <div class="scroller__inner">
+          <img src="./images/amazon_white.svg" class="small" alt="" />
+          <img src="./images/one_plus.svg" class="small" alt="" />
+          <img src="./images/indigo_white_expand.svg" alt="" />
+          <img src="./images/macdonalds_white_expand.svg" alt="" />
+          <img src="./images/burger_king_white_expand.svg" alt="" />
+          <img src="./images/starbucks_white_expand.svg" alt="" />
+
+          <img src="./images/xiomi_white_expand.svg" alt="" />
+          <img src="./images/microsoft_white.svg" class="small" alt="" />
+          <img src="./images/google_white.svg" class="small" alt="" />
+
+          <img src="./images/lenskart_white_expand.svg" alt="" />
+          <img src="./images/urban_company_white_expand.svg" alt="" />
+
+          <img src="./images/flipkart_walmart_white_expand.svg" alt="" />
+          <img src="./images/agoda_white_expand.svg" alt="" />
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
