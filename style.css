@@ -14,6 +14,7 @@
   --themeEclipse: #3c3636;
   --themeAliceBlueLight: #f3f8ff;
   --themeSilentSea: #394762;
+  --themeDarkBlue: #3582f680;
 }
 
 @font-face {
@@ -225,6 +226,7 @@ body {
 
 .navItemsCtn > a {
   display: block;
+  opacity: 0;
   transform: translateY(110%);
 }
 
@@ -263,6 +265,10 @@ body {
 
 #navGlobeIcon {
   width: 3rem;
+}
+
+#headingTextContainer {
+  text-align: center;
 }
 
 #headingTextContainer,
@@ -510,7 +516,7 @@ body {
   padding-block: 1rem;
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: 5rem;
 }
 
@@ -574,9 +580,63 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 500px) {
+.contactUs {
+  color: var(--themeDodgerBlue);
+}
+
+@media only screen and (max-width: 1024px) {
+  #textRevealEffectContainer div {
+    font-size: 5.4rem;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  #textRevealEffectContainer div {
+    font-size: 4.5rem;
+  }
+
+  #headingTextContainer h1 {
+    font-size: 5.3rem;
+  }
+
+  .firstRow,
+  .secondRow,
+  .thirdRow,
+  .fourthRow {
+    transform: translateY(135%);
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  #textRevealEffectContainer div,
+  #headingTextContainer h1 {
+    font-size: 4rem;
+  }
+
+  .firstRow,
+  .secondRow,
+  .thirdRow,
+  .fourthRow {
+    transform: translateY(135%);
+  }
+}
+
+@media only screen and (max-width: 540px) {
   body {
     background-color: lightblue;
+  }
+
+  .globeNav > a {
+    opacity: 1;
+  }
+
+  .globeNav {
+    height: unset !important;
+  }
+
+  .navItemsCtn > a {
+    display: block;
+    transform: translateY(0%);
   }
 
   #ctaContainer {
@@ -608,7 +668,7 @@ body {
   }
 
   #navigationContainer nav {
-    max-width: 25rem;
+    max-width: 32rem;
     padding: 0.75rem 1.25rem;
     /* background-color: red; */
     height: 74%;
@@ -624,6 +684,11 @@ body {
     display: block;
   }
 
+  #hamburgerBtn:focus {
+    border: 1px solid var(--themeDarkBlue);
+    border-radius: 0.5rem;
+  }
+
   #hamburgerBtn {
     background-color: transparent;
     outline: none;
@@ -634,7 +699,7 @@ body {
   }
 
   #hamburgerBtn img {
-    height: 2rem;
+    height: 1rem;
     max-width: 100%;
   }
 
@@ -709,5 +774,27 @@ body {
 
   .mobileNavigation > div {
     padding-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #navigationContainer nav {
+    max-width: 23rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #headingTextContainer h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #navigationContainer nav {
+    max-width: 21rem;
+  }
+
+  #mainFirstFoldContainer {
+    margin-top: 4rem;
   }
 }

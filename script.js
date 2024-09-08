@@ -26,6 +26,7 @@ tl.to(".navItemsCtn > a", {
   duration: 1,
   y: 0,
   stagger: 0.5,
+  opacity: 1,
 });
 
 tl.to(".globeNav", {
