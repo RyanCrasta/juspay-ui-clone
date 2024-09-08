@@ -94,7 +94,7 @@ tl.fromTo(
 );
 
 tl.fromTo(
-  "#ctaButtonText",
+  ".ctaButtonText",
   {
     width: "10px",
   },
@@ -321,7 +321,7 @@ function bannerTextAnimationForMobile(
   tl.to(
     `.${rowId}-seventhPair-left`,
     {
-      y: "-165%",
+      y: "-305%",
       duration: 1,
       opacity: opacity,
     },
