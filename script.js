@@ -452,10 +452,7 @@ function cursorEffect(cursorId, pageContent) {
   });
 
   document.querySelector("#firstColumn").addEventListener("mouseenter", () => {
-    // document.querySelector("#followCursor").style.backgroundColor = "orange";
-
     $("#followCursor img").attr("src", "./images/general-hover.svg");
-
     document.querySelector("#cursorInfoLineOne").textContent = "125Mn+";
     document.querySelector("#cursorInfoLineTwo").textContent = "Daily Trans";
     document.querySelector("#cursorInfo").style.bottom = "unset";
@@ -465,8 +462,6 @@ function cursorEffect(cursorId, pageContent) {
   });
 
   document.querySelector("#secondColumn").addEventListener("mouseenter", () => {
-    // document.querySelector("#followCursor").style.backgroundColor = "green";
-
     $("#followCursor img").attr("src", "./images/global-hover.svg");
     document.querySelector("#cursorInfoLineOne").textContent = "99.99%";
     document.querySelector("#cursorInfoLineTwo").textContent = "Uptime";
@@ -482,14 +477,11 @@ function cursorEffect(cursorId, pageContent) {
   });
 
   document.querySelector("#thirdColumn").addEventListener("mouseenter", () => {
-    // document.querySelector("#followCursor").style.backgroundColor = "red";
     $("#followCursor img").attr("src", "./images/juspay-hover.svg");
     document.querySelector("#cursorInfoLineOne").textContent = "$500Bn+";
     document.querySelector("#cursorInfoLineTwo").textContent = "Annual TPV";
-
     document.querySelector("#cursorInfo").style.bottom = "60%";
     document.querySelector("#cursorInfo").style.top = "unset";
-
     hide = false;
     scaleUp();
   });
