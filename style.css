@@ -343,10 +343,12 @@ body {
   font-size: 1.187rem;
   font-family: PlusJakartaSans-Regular;
   font-weight: 300;
+  line-height: 1.7rem;
 }
 
 #ctaContainer h2 span {
   color: var(--themeWhite);
+  font-weight: 600;
 }
 
 #ctaButton {
@@ -595,8 +597,8 @@ body {
 }
 
 @media only screen and (max-width: 540px) {
-  body {
-    background-color: lightblue;
+  #ctaContainer h2 {
+    line-height: 1.3rem;
   }
 
   .globeNav > a {
